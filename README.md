@@ -35,5 +35,12 @@ After the analysis it was found that GROM has the largest decline in the sales t
 
 
 
+To create a dataframe to with recent executive arrival/departure information we have to first segregate the information from 'recent_exec_hires',
+ 'recent_exec_departures' column where 'job_title_role' is engineering
 
+ Corresponding to that row we have to find the required information of the company
+
+ To check for arrival/depature I have made a function extract_movement, which will run only on non-empty rows and will extract data where job_title_role is engineering
+
+ An empty list all_movements have been created to store these information which is later converted to a dataframe movements_df
  
